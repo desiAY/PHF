@@ -26,7 +26,7 @@
           </CForm>
 
           <CForm class="mt-2 mb-2">
-            <label>Jabatan</label>
+            <label>JABATAN</label>
             <CFormSelect
               aria-label="Default select example"
               :options="[
