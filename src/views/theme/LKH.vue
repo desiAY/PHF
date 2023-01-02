@@ -39,53 +39,150 @@
       </CCard>
       <CCard class="mb-4">
         <CCardHeader> DATA PEKERJAAN HARIAN </CCardHeader>
+        <CButton color="tambah" variant="outline">Tambah Pekerjaan</CButton>
+      </CCard>
+      <CCard>
         <CCardBody>
           <CForm>
+            <CFormInput date="2022/2/16" label="Tanggal" ocale="id-INA" />
+          </CForm>
+
+          <CForm class="mt-2 mb-2">
+            <label>BAB</label>
+            <CFormSelect
+              aria-label="Default select example"
+              :options="[
+                'Pilih BAB Pekerjaan',
+                {
+                  label:
+                    'BAB I : TATA KELOLA DAN TATA LAKSANA TEKNOLOGI INFORMASI',
+                  value: '1',
+                },
+                {
+                  label: 'BAB II : INFRASTRUKTUR TEKNOLOGI INFORMASI',
+                  value: '2',
+                },
+                {
+                  label: 'BAB III : SISTEM INFORMASI DAN MULTIMEDIA',
+                  value: '3',
+                },
+                {
+                  label: 'BAB IV : PENGEMBANGAN PROFESI',
+                  value: '4',
+                },
+                {
+                  label: 'BAB V : PENUNJANG KEGIATAN PRANATA KOMPUTER',
+                  value: '5',
+                },
+              ]"
+            >
+            </CFormSelect>
+          </CForm>
+          <CForm class="mt-2 mb-2">
+            <label>Sub-BAB</label>
+            <CFormSelect
+              aria-label="Default select example"
+              :options="[
+                'Pilih Sub-BAB Pekerjaan',
+                {
+                  label:
+                    'BAB I : TATA KELOLA DAN TATA LAKSANA TEKNOLOGI INFORMASI',
+                  value: '1',
+                },
+                {
+                  label: 'BAB II : INFRASTRUKTUR TEKNOLOGI INFORMASI',
+                  value: '2',
+                },
+                {
+                  label: 'BAB III : SISTEM INFORMASI DAN MULTIMEDIA',
+                  value: '3',
+                },
+                {
+                  label: 'BAB IV : PENGEMBANGAN PROFESI',
+                  value: '4',
+                },
+                {
+                  label: 'BAB V : PENUNJANG KEGIATAN PRANATA KOMPUTER',
+                  value: '5',
+                },
+              ]"
+            >
+            </CFormSelect>
+          </CForm>
+          <CForm class="mt-2 mb-2">
+            <label>Butir Pekerjaan</label>
+            <CFormSelect
+              aria-label="Default select example"
+              :options="[
+                'Pilih Butir Pekerjaan',
+                {
+                  label:
+                    'BAB I : TATA KELOLA DAN TATA LAKSANA TEKNOLOGI INFORMASI',
+                  value: '1',
+                },
+                {
+                  label: 'BAB II : INFRASTRUKTUR TEKNOLOGI INFORMASI',
+                  value: '2',
+                },
+                {
+                  label: 'BAB III : SISTEM INFORMASI DAN MULTIMEDIA',
+                  value: '3',
+                },
+                {
+                  label: 'BAB IV : PENGEMBANGAN PROFESI',
+                  value: '4',
+                },
+                {
+                  label: 'BAB V : PENUNJANG KEGIATAN PRANATA KOMPUTER',
+                  value: '5',
+                },
+              ]"
+            >
+            </CFormSelect>
+          </CForm>
+          <CForm>
             <CFormInput
-              type="nama"
+              type="deskripsi"
               id="exampleFormControlInput1"
-              label="Nama Pegawai"
+              label="Deskripsi Pekerjaan"
               placeholder=""
-              text="Must be 8-20 characters long."
               aria-describedby="exampleFormControlInputHelpInline"
             />
           </CForm>
           <CForm>
-            <CFormInput
-              type="nip"
-              id="exampleFormControlInput1"
-              label="NIP"
-              placeholder=""
-              aria-describedby="exampleFormControlInputHelpInline"
-            />
+            <div class="mb-3">
+              <CFormLabel for="formFile">Upload Bukti</CFormLabel>
+              <CFormInput id="formFile" type="file" />
+            </div>
           </CForm>
           <CForm>
             <CFormInput
-              type="jabatan"
+              type="link"
               id="exampleFormControlInput1"
-              label="Jabatan"
+              label="Bukti Link"
               placeholder=""
               aria-describedby="exampleFormControlInputHelpInline"
             />
           </CForm>
-          <CForm>
-            <CFormInput
-              type="unit kerja"
-              id="exampleFormControlInput1"
-              label="Unit kerja"
-              placeholder=""
-              aria-describedby="exampleFormControlInputHelpInline"
-            />
+          <CForm class="mt-2 mb-2">
+            <label>Periode</label>
+            <CFormSelect
+              aria-label="Default select example"
+              :options="[
+                'Periode Progress',
+                {
+                  label: 'Ganjil 2023',
+                  value: '1',
+                },
+                {
+                  label: 'Genap 2023',
+                  value: '2',
+                },
+              ]"
+            >
+            </CFormSelect>
           </CForm>
-          <CForm>
-            <CFormInput
-              type="satuan kerja"
-              id="exampleFormControlInput1"
-              label="Satuan kerja"
-              placeholder=""
-              aria-describedby="exampleFormControlInputHelpInline"
-            />
-          </CForm>
+          <br />
           <CForm>
             <CButton color="dark">Submit</CButton>
           </CForm>
