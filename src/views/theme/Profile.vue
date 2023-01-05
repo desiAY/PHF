@@ -1,9 +1,9 @@
 <template>
   <CRow>
     <CCol>
-      <h1>PROFILE PEGAWAI</h1>
+      <h1>PROFIL PEGAWAI</h1>
       <CCard class="mb-4">
-        <CCardHeader>Jabatan Fungsional Pranata Komputer </CCardHeader>
+        <CCardHeader><b>Jabatan Fungsional Pranata Komputer </b></CCardHeader>
         <CCardBody>
           <CForm>
             <CFormInput
@@ -31,8 +31,10 @@
               aria-label="Default select example"
               :options="[
                 'Pilih Jabatan',
-                { label: 'Pranata Komputer - Ahli Pertama', value: '1' },
-                { label: 'Pranata Komputer - Ahli Muda', value: '2' },
+                { label: 'Ahli Pertama', value: '1' },
+                { label: 'Ahli Muda', value: '2' },
+                { label: 'Ahli Madya', value: '3' },
+                { label: 'Ahli Utama', value: '4' },
               ]"
             >
             </CFormSelect>
