@@ -8,7 +8,7 @@
         <CCardBody>
           <div class="bd-example">
             <dl class="row">
-              <dt class="col-sm-3">Nama pegawai :</dt>
+              <dt class="col-sm-3">Nama Pegawai :</dt>
               <dd class="col-sm-9">
                 <p>Budianto</p>
               </dd>
@@ -18,12 +18,12 @@
                 <p>0123456789</p>
               </dd>
 
-              <dt class="col-sm-3">Unit kerja :</dt>
+              <dt class="col-sm-3">Unit Kerja :</dt>
               <dd class="col-sm-9">
                 <p>Sub Keuangan</p>
               </dd>
 
-              <dt class="col-sm-3">Satuan kerja :</dt>
+              <dt class="col-sm-3">Satuan Kerja :</dt>
               <dd class="col-sm-9">
                 <dl class="row">
                   <dd class="col-sm-8">
@@ -39,22 +39,23 @@
       </CCard>
       <CCard class="mb-4">
         <CCardHeader><b> Data Pekerjaan Harian </b></CCardHeader>
-        <CButton color="tambah" variant="outline">Tambah Pekerjaan</CButton>
+        <CButton color="primary" variant="outline">Tambah Pekerjaan</CButton>
       </CCard>
       <CCard>
         <CCardBody>
           <CForm>
-            <CFormInput
-              type="tanggal"
-              id="exampleFormControlInput1"
-              label="Tanggal"
-              placeholder=""
-              aria-describedby="exampleFormControlInputHelpInline"
-            />
+            <b>
+              <CFormInput
+                type="text"
+                id="formControlTanggal"
+                label="Tanggal"
+                aria-describedby="formControlTanggal"
+              />
+            </b>
           </CForm>
 
           <CForm class="mt-2 mb-2">
-            <label>BAB Pekerjaan</label>
+            <b>BAB Pekerjaan</b>
             <CFormSelect
               aria-label="Default select example"
               :options="[
@@ -86,11 +87,11 @@
           </CForm>
 
           <CForm class="mt-2 mb-2">
-            <label>Sub-BAB</label>
+            <b>Sub-BAB</b>
             <CFormSelect
               aria-label="Default select example"
               :options="[
-                'Pilih sub-BAB',
+                'Pilih Sub-BAB',
                 {
                   label:
                     'BAB I : TATA KELOLA DAN TATA LAKSANA TEKNOLOGI INFORMASI',
@@ -118,7 +119,7 @@
           </CForm>
 
           <CForm class="mt-2 mb-2">
-            <label>Butir Pekerjaan</label>
+            <b>Butir Pekerjaan</b>
             <CFormSelect
               aria-label="Default select example"
               :options="[
@@ -150,37 +151,39 @@
           </CForm>
 
           <CForm class="mt-2 mb-2">
-            <CFormInput
-              type="deskripsi"
-              id="exampleFormControlInput1"
-              label="Deskripsi Pekerjaan"
-              placeholder=""
-              aria-describedby="exampleFormControlInputHelpInline"
-            />
+            <b>
+              <CFormInput
+                type="text"
+                id="formControlDeskripsi"
+                label="Deskripsi Pekerjaan"
+                aria-describedby="formControlDeskripsi"
+              />
+            </b>
           </CForm>
 
           <CForm class="mt-2 mb-2">
             <div class="mb-3">
-              <CFormLabel for="formFile">Upload Bukti</CFormLabel>
+              <b><CFormLabel for="formFile">Upload Bukti</CFormLabel></b>
               <CFormInput id="formFile" type="file" />
             </div>
           </CForm>
 
           <CForm class="mt-2 mb-2">
-            <CFormInput
-              type="link"
-              id="exampleFormControlInput1"
-              label="Bukti Link"
-              placeholder=""
-              aria-describedby="exampleFormControlInputHelpInline"
-            />
+            <b>
+              <CFormInput
+                type="text"
+                id="formControlLink"
+                label="Bukti Link"
+                aria-describedby="formControlLink"
+              />
+            </b>
           </CForm>
           <CForm class="mt-2 mb-2">
-            <label>Periode Progress</label>
+            <b>Periode Progress</b>
             <CFormSelect
               aria-label="Default select example"
               :options="[
-                'Pilih periode',
+                'Pilih Periode',
                 {
                   label: 'Ganjil 2023',
                   value: '1',

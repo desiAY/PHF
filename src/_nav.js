@@ -7,18 +7,18 @@ export default [
     component: 'CNavItem',
     name: 'Colors',
     to: '/theme/colors',
-    icon: 'cil-drop',
+    icon: 'cilDrop',
   },
   {
     component: 'CNavItem',
     name: 'Typography',
     to: '/theme/typography',
-    icon: 'cil-pencil',
+    icon: 'cilPencil',
   },
   {
     component: 'CNavItem',
-    name: 'Profile',
-    to: '/theme/profile',
+    name: 'Profil',
+    to: '/theme/profil',
     icon: 'cilUser',
   },
   {
@@ -35,7 +35,7 @@ export default [
     component: 'CNavGroup',
     name: 'Base',
     to: '/base',
-    icon: 'cil-puzzle',
+    icon: 'cilPuzzle',
     items: [
       {
         component: 'CNavItem',
@@ -113,7 +113,7 @@ export default [
     component: 'CNavGroup',
     name: 'Buttons',
     to: '/buttons',
-    icon: 'cil-cursor',
+    icon: 'cilCursor',
     items: [
       {
         component: 'CNavItem',
@@ -136,7 +136,7 @@ export default [
     component: 'CNavGroup',
     name: 'Forms',
     to: '/forms',
-    icon: 'cil-notes',
+    icon: 'cilNotes',
     items: [
       {
         component: 'CNavItem',
@@ -184,13 +184,13 @@ export default [
     component: 'CNavItem',
     name: 'Charts',
     to: '/charts',
-    icon: 'cil-chart-pie',
+    icon: 'cilChartPie',
   },
   {
     component: 'CNavGroup',
     name: 'Icons',
     to: '/icons',
-    icon: 'cil-star',
+    icon: 'cilStar',
     items: [
       {
         component: 'CNavItem',
@@ -217,7 +217,7 @@ export default [
     component: 'CNavGroup',
     name: 'Notifications',
     to: '/notifications',
-    icon: 'cil-bell',
+    icon: 'cilBell',
     items: [
       {
         component: 'CNavItem',
@@ -240,7 +240,7 @@ export default [
     component: 'CNavItem',
     name: 'Widgets',
     to: '/widgets',
-    icon: 'cil-calculator',
+    icon: 'cilCalculator',
     badge: {
       color: 'primary',
       text: 'NEW',
@@ -255,7 +255,7 @@ export default [
     component: 'CNavGroup',
     name: 'Pages',
     to: '/pages',
-    icon: 'cil-star',
+    icon: 'cilStar',
     items: [
       {
         component: 'CNavItem',
