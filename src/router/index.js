@@ -35,9 +35,9 @@ const routes = [
         component: () => import('@/views/theme/Typography.vue'),
       },
       {
-        path: '/theme/profile',
-        name: 'Profile',
-        component: () => import('@/views/theme/Profile.vue'),
+        path: '/theme/profil',
+        name: 'Profil',
+        component: () => import('@/views/theme/Profil.vue'),
       },
       {
         path: '/theme/lkh',
