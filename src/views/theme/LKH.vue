@@ -45,19 +45,13 @@
         <CCardBody>
           <CForm>
             <b>
-              <CFormInput
-                type="text"
-                id="formControlTanggal"
-                label="Tanggal"
-                aria-describedby="formControlTanggal"
-              />
+              <CFormInput type="text" id="formControlTanggal" label="Tanggal" />
             </b>
           </CForm>
 
           <CForm class="mt-2 mb-2">
             <b>BAB Pekerjaan</b>
             <CFormSelect
-              aria-label="Default select example"
               :options="[
                 'Pilih BAB',
                 {
@@ -89,7 +83,6 @@
           <CForm class="mt-2 mb-2">
             <b>Sub-BAB</b>
             <CFormSelect
-              aria-label="Default select example"
               :options="[
                 'Pilih Sub-BAB',
                 {
@@ -121,9 +114,8 @@
           <CForm class="mt-2 mb-2">
             <b>Butir Pekerjaan</b>
             <CFormSelect
-              aria-label="Default select example"
               :options="[
-                'Pilih butir pekerjaan',
+                'Pilih Butir pekerjaan',
                 {
                   label:
                     'BAB I : TATA KELOLA DAN TATA LAKSANA TEKNOLOGI INFORMASI',
@@ -156,7 +148,6 @@
                 type="text"
                 id="formControlDeskripsi"
                 label="Deskripsi Pekerjaan"
-                aria-describedby="formControlDeskripsi"
               />
             </b>
           </CForm>
@@ -170,18 +161,12 @@
 
           <CForm class="mt-2 mb-2">
             <b>
-              <CFormInput
-                type="text"
-                id="formControlLink"
-                label="Bukti Link"
-                aria-describedby="formControlLink"
-              />
+              <CFormInput type="text" id="formControlLink" label="Bukti Link" />
             </b>
           </CForm>
           <CForm class="mt-2 mb-2">
             <b>Periode Progress</b>
             <CFormSelect
-              aria-label="Default select example"
               :options="[
                 'Pilih Periode',
                 {
