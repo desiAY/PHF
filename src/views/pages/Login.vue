@@ -35,11 +35,6 @@
                     <CCol :xs="6">
                       <CButton color="primary" class="px-4"> Masuk </CButton>
                     </CCol>
-                    <CCol :xs="6" class="text-right">
-                      <CButton color="link" class="px-0">
-                        <i>Lupa password?</i>
-                      </CButton>
-                    </CCol>
                   </CRow>
                 </CForm>
               </CCardBody>
