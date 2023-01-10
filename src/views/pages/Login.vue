@@ -9,7 +9,7 @@
                 <CForm>
                   <h1>Selamat Datang!</h1>
                   <p class="text-medium-emphasis">
-                    Siilakan masukkan <i>username</i> dan <i>password</i> akun
+                    Silakan masukkan <i>username</i> dan <i>password</i> akun
                     Anda.
                   </p>
                   <CInputGroup class="mb-3">
