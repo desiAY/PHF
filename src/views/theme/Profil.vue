@@ -6,27 +6,15 @@
         <CCardHeader><b>Jabatan Fungsional Pranata Komputer </b></CCardHeader>
         <CCardBody>
           <CForm>
-            <CFormInput
-              type="text"
-              id="formControlNama"
-              label="Nama Pegawai"
-              text=""
-              aria-describedby="formControlNama"
-            />
+            <CFormInput type="text" id="formControlNama" label="Nama Pegawai" />
           </CForm>
           <CForm class="mt-2 mb-2">
-            <CFormInput
-              type="text"
-              id="formControlNip"
-              label="NIP"
-              aria-describedby="formControlNip"
-            />
+            <CFormInput type="text" id="formControlNip" label="NIP" />
           </CForm>
 
           <CForm class="mt-2 mb-2">
             <label>Jabatan</label>
             <CFormSelect
-              aria-label="Default select example"
               :options="[
                 'Pilih Jabatan',
                 { label: 'Ahli Pertama', value: '1' },
@@ -37,22 +25,19 @@
             >
             </CFormSelect>
           </CForm>
+
           <CForm>
-            <CFormInput
-              type="text"
-              id="formControlUnit"
-              label="Unit kerja"
-              aria-describedby="formControlUnit"
-            />
+            <CFormInput type="text" id="formControlUnit" label="Unit kerja" />
           </CForm>
+
           <CForm>
             <CFormInput
               type="text"
               id="formControlSatuan"
               label="Satuan kerja"
-              aria-describedby="formControlSatuan"
             />
           </CForm>
+
           <br />
           <CForm>
             <CButton color="dark">Submit</CButton>
