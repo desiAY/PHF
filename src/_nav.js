@@ -264,6 +264,11 @@ export default [
       },
       {
         component: 'CNavItem',
+        name: 'Ubah Password',
+        to: '/pages/ubah',
+      },
+      {
+        component: 'CNavItem',
         name: 'Register',
         to: '/pages/register',
       },

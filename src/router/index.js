@@ -301,6 +301,11 @@ const routes = [
         name: 'Register',
         component: () => import('@/views/pages/Register'),
       },
+      {
+        path: 'ubah',
+        name: 'Ubah',
+        component: () => import('@/views/pages/Ubah'),
+      },
     ],
   },
 ]
