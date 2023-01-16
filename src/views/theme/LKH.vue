@@ -2,7 +2,6 @@
   <CRow>
     <CCol>
       <h1>PROGRESS HARIAN FUNGSIONAL</h1>
-      <CCard class="mb-4"> </CCard>
       <CCard class="mb-4">
         <CCardHeader><b> Informasi Identitas Pegawai </b></CCardHeader>
         <CCardBody>
@@ -41,7 +40,7 @@
         <CCardHeader><b> Data Pekerjaan Harian </b></CCardHeader>
         <CButton color="primary" variant="outline">Tambah Pekerjaan</CButton>
       </CCard>
-      <CCard>
+      <CCard class="mb-5">
         <CCardBody>
           <CForm>
             <b>
@@ -154,7 +153,10 @@
 
           <CForm class="mt-2 mb-2">
             <div class="mb-3">
-              <b><CFormLabel for="formFile">Upload Bukti</CFormLabel></b>
+              <b><CFormLabel for="formFile">Upload Bukti</CFormLabel></b> <br />
+              <CButton class="mb-2" color="primary" variant="outline">
+                Tambah Bukti
+              </CButton>
               <CFormInput id="formFile" type="file" />
             </div>
           </CForm>
@@ -163,23 +165,6 @@
             <b>
               <CFormInput type="text" id="formControlLink" label="Bukti Link" />
             </b>
-          </CForm>
-          <CForm class="mt-2 mb-2">
-            <b>Periode Progress</b>
-            <CFormSelect
-              :options="[
-                'Pilih Periode',
-                {
-                  label: 'Ganjil 2023',
-                  value: '1',
-                },
-                {
-                  label: 'Genap 2023',
-                  value: '2',
-                },
-              ]"
-            >
-            </CFormSelect>
           </CForm>
           <br />
 
